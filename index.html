@@ -9,58 +9,58 @@
           media="screen"
           charset="utf-8">
   </head>
-  <body>
+  <body class="page">
     <header class="eisenhower-matrix">
-      <img class="img" src="./eisenhower-matrix.jpg">
-      <a class="more-info"
+      <img class="eisenhower-matrix__img" src="./eisenhower-matrix.jpg">
+      <a class="eisenhower-matrix__more-info"
          href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
     </header>
     <main class="main centered">
-      <p id="add-task">
-        <label class="heading-sm new-task-label" for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input class="input-text new-task-input task-label"
+      <p class="add-task">
+        <label class="add-task__heading heading-sm" for="new-task">Add Item</label>
+        <div class="add-task__wrapper">
+          <input class="add-task__input input-text"
                  id="new-task"
                  type="text">
-          <button class="button">Add</button>
+          <button class="add-task__button button">Add</button>
         </div>
       </p>
       <h3 class="heading-sm">Todo</h3>
-      <ul class="task-list" id="incomplete-tasks">
+      <ul class="task-list task-list--incomplete">
         <li class="task-list-item">
-          <input class="task-list-item-check" type="checkbox">
-          <label class="task-list-item-label task-label">Pay Bills</label>
-          <input class="task-list-item-input task-label input-text"
+          <input class="task-list-item__check" type="checkbox">
+          <label class="task-list-item__label task-label">Pay Bills</label>
+          <input class="task-list-item__input task-label input-text"
                  type="text">
-          <button class="button edit-button">Edit</button>
-          <button class="button delete-button">
-            <img class="delete-button-img" src="./remove.svg">
+          <button class="task-list-item__edit-button button">Edit</button>
+          <button class="task-list-item__delete-button button">
+            <img class="task-list-item__delete-button-img" src="./remove.svg">
           </button>
         </li>
-        <li class="task-list-item edit-mode">
-          <input class="task-list-item-check" type="checkbox">
-          <label class="task-list-item-label task-label">Go Shopping</label>
-          <input class="task-list-item-input task-label input-text"
+        <li class="task-list-item task-list-item--edit-mode">
+          <input class="task-list-item__check" type="checkbox">
+          <label class="task-list-item__label task-label">Go Shopping</label>
+          <input class="task-list-item__input task-label input-text"
                  type="text"
                  value="Go Shopping">
-          <button class="button edit-button">Save</button>
-          <button class="button delete-button">
-            <img class="delete-button-img" src="./remove.svg">
+          <button class="task-list-item__edit-button button">Save</button>
+          <button class="task-list-item__delete-button button">
+            <img class="task-list-item__delete-button-img" src="./remove.svg">
           </button>
         </li>
       </ul>
       <h3 class="heading-sm">Completed</h3>
-      <ul class="task-list" id="completed-tasks">
-        <li class="task-list-item">
-          <input class="task-list-item-check" type="checkbox" checked>
-          <label class="task-list-item-label task-label">See the Doctor</label>
-          <input class="task-list-item-input task-label input-text"
+      <ul class="task-list task-list--completed">
+        <li class="task-list-item task-list-item--completed">
+          <input class="task-list-item__check" type="checkbox" checked>
+          <label class="task-list-item__label task-label">See the Doctor</label>
+          <input class="task-list-item__input task-label input-text"
                  type="text">
-          <button class="button edit-button">Edit</button>
-          <button class="button delete-button">
-            <img class="delete-button-img" src="./remove.svg">
+          <button class="button task-list-item__edit-button">Edit</button>
+          <button class="task-list-item__delete-button button ">
+            <img class="task-list-item__delete-button-img" src="./remove.svg">
           </button>
         </li>
       </ul>
