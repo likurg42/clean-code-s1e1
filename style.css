@@ -181,7 +181,6 @@ body {
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-
-.delete-button__img:hover {
+.task-list-item__delete-button-img:hover {
   transform: rotateZ(0);
 }
